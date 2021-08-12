@@ -1,0 +1,50 @@
+.card {
+  background-color: white;
+  padding: 10px 70px 10px 70px;
+  margin: 15px 200px 15px 200px;
+  border-radius: 18px;
+  box-shadow: #d1d2d3 10px 6px 0 0;
+  font-family: Proxima Nova;
+  color: #383838;
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    margin: 15px 100px 15px 100px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #1976d2;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border-style: solid;
+  border-color: #d1d2d3;
+}
+
+body {
+  background-color: #f3f3f3;
+  min-width: 800px;
+}
+
+.contacts {
+  margin: 20px 0 20px 0;
+}
+
+.social-icon {
+  margin: 0 5px 0 5px;
+}

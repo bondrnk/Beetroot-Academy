@@ -1,0 +1,33 @@
+h1 {
+  background-color: #a52a2a;
+  color: white;
+  text-align: center;
+}
+
+.image-width {
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+
+.blue-color {
+  color: blue;
+}
+
+.image-box {
+  text-align: center;
+}
+
+.image-border {
+  border: 3px dashed black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin: 30px 0;
+}

@@ -1,0 +1,426 @@
+/* Fonts */
+
+@font-face {
+  font-family: Chronicle Display Bold;
+  src: url(./fonts/Chronicle\ Display\ Bold.otf);
+}
+
+@font-face {
+  font-family: Chronicle Display Semibold;
+  src: url(./fonts/Chronicle\ Display\ Semibold.otf);
+}
+
+@font-face {
+  font-family: Gilroy ExtraBold;
+  src: url(./fonts/Gilroy\ ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy Bold;
+  src: url(./fonts/Gilroy\ Bold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy Medium;
+  src: url(./fonts/Gilroy\ Medium.ttf);
+}
+
+/* All */
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+  max-width: 1920px;
+
+  background-color: #0b1d26;
+  color: white;
+}
+
+/* Header */
+
+.header-wrapper {
+  margin: 0 55px;
+}
+
+.header-menu {
+  margin-top: 45px;
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  font-family: Gilroy Bold;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Logo */
+
+.logo {
+  font-family: Chronicle Display Bold;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+/* Navigation */
+
+.header-nav {
+  align-items: center;
+  display: flex;
+}
+
+.header-nav__item {
+  margin: 0 14px;
+
+  text-decoration: none;
+  color: white;
+}
+
+/* Account */
+
+.header-account {
+  align-items: center;
+  display: flex;
+
+  text-decoration: none;
+  color: white;
+}
+
+.header-account__image {
+  height: 16px;
+  width: 16px;
+}
+
+.header-account__text {
+  margin-left: 10px;
+}
+
+/* Intro part */
+
+.intro {
+  margin-top: 120px;
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  font-family: Gilroy Bold;
+  font-size: 12px;
+}
+
+/* Intro social */
+
+.intro-social {
+  margin-top: 30px;
+
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.intro-social__text {
+  /* !!! Strange size of rotated text */
+  margin: 0 -30px 45px -30px;
+
+  transform: rotate(90deg);
+  text-decoration: none;
+  color: white;
+}
+
+.intro-social__item {
+  margin-bottom: 20px;
+
+  height: 16px;
+  width: 16px;
+}
+
+/* Intro content */
+
+.intro-content {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+
+.description {
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+
+  color: #fbd784;
+
+  font-family: Gilroy Extrabold;
+  letter-spacing: 6px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.divider {
+  height: 1px;
+  width: 15%;
+
+  margin-right: 25px;
+
+  background-color: #fbd784;
+  border: none;
+}
+
+.header-title__wrapper {
+  margin: 15px 0;
+}
+
+.header-title {
+  margin: 0;
+
+  font-family: Chronicle Display Semibold;
+  text-decoration: none;
+  line-height: 65px;
+  font-weight: 400;
+  font-size: 58px;
+}
+
+.header-link {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+
+.header-link__image {
+  margin-left: 5px;
+
+  height: 24px;
+  width: 24px;
+}
+
+/* Intro slider */
+
+.slider {
+  flex-direction: column;
+  align-items: flex-end;
+  display: flex;
+}
+
+.slider-item {
+  padding: 14px;
+
+  border-right: 2px solid #ffffff75;
+  text-decoration: none;
+  color: white;
+}
+
+.slider-item:first-child {
+  padding: 14px;
+
+  border-right: 2px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+/* Background images */
+
+.background-item {
+  position: absolute;
+  max-width: 1920px;
+  min-width: 750px;
+  width: 100%;
+}
+
+.background-main {
+  z-index: -4;
+  top: 0;
+}
+
+.background-mountain {
+  z-index: -3;
+  top: 310px;
+}
+
+.background-fog {
+  z-index: -2;
+  top: 0;
+}
+
+.background-hill {
+  z-index: -1;
+  top: 500px;
+}
+
+.background-transition {
+  z-index: -1;
+  top: 800px;
+}
+
+/* Main */
+
+.contain-wrapper {
+  margin: 550px 155px 0;
+}
+
+/* Section */
+
+.content-section {
+  margin-bottom: 135px;
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+/* Section info */
+
+.section-info {
+  width: 65%;
+
+  margin-right: 75px;
+  margin-left: 150px;
+
+  position: relative;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+
+  font-family: Gilroy Bold;
+  font-weight: 400;
+}
+
+.section-number {
+  margin: -80px -100px;
+
+  position: absolute;
+  left: 0;
+
+  font-weight: bold;
+  font-size: 160px;
+  opacity: 0.1;
+}
+
+.section-title__wrapper {
+  margin-top: 18px;
+}
+
+.section-title {
+  font-family: Chronicle Display Semibold;
+  text-decoration: none;
+  line-height: 52px;
+  font-weight: 400;
+  font-size: 42px;
+}
+
+.text-wrapper {
+  margin-top: 18px;
+}
+
+.text {
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.section-link {
+  margin-top: 18px;
+
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+
+  color: #fbd784;
+}
+
+.section-link__image {
+  height: 24px;
+  width: 24px;
+
+  margin-left: 10px;
+
+  color: white;
+}
+
+/* Section image */
+
+.section-image {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  margin: 0 155px 60px;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+/* Footer info */
+
+.footer-info {
+  width: 25%;
+
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 0.5;
+  display: flex;
+}
+
+.footer-tagline {
+  margin-top: 20px;
+
+  font-family: Gilroy Bold;
+  font-size: 12px;
+}
+
+.footer-copyright {
+  margin-top: 100px;
+  margin-left: 5px;
+
+  font-family: Gilroy Medium;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 50%;
+}
+
+/* Footer nav */
+
+.footer-nav {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+
+  font-family: Gilroy Medium;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.footer-nav__title {
+  margin-bottom: 20px;
+
+  font-family: Gilroy Bold;
+  color: #fbd784;
+  font-size: 16px;
+}
+
+.footer-nav__link {
+  margin-bottom: 16px;
+
+  text-decoration: none;
+  color: white;
+}

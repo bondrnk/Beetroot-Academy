@@ -114,10 +114,14 @@ body {
 .homework-item:hover {
   box-shadow: 3px 3px 0 lightgray;
   border: 1px solid #0d0e34;
+
+  transition: all 0.2s ease-in;
 }
 
 .homework-item:hover svg {
   color: #fdeb5d;
+
+  transition: all 0.1s ease-in;
 }
 
 .homework-item:active {

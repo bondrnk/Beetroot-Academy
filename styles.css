@@ -1,51 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   text-decoration: none;
   text-align: center;
-  min-width: 1200px;
 }
 
 /* Header */
 
 .header-wrapper {
-  justify-content: space-around;
-  background-color: #0d0e34;
+  width: 100%;
+
+  padding: 30px 5px;
+
+  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  color: white;
-  padding: 20px;
   display: flex;
+
+  background-color: #0d0e34;
+  color: white;
 }
 
 .button-menu {
-  padding: 20px 20px 20px;
+  padding: 10px;
+
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-size: small;
   display: flex;
-  height: 40px;
 }
 
 .btn {
-  background-color: white;
+  min-width: 200px;
+
+  margin: 10px 20px;
+  padding: 10px 3%;
+
   justify-content: center;
-  text-decoration: none;
-  padding-bottom: 10px;
-  margin: 0 20px 20px;
   align-items: center;
-  border-radius: 15px;
   flex-wrap: nowrap;
-  padding-top: 10px;
-  padding-right: 3%;
-  padding-left: 3%;
-  color: #0d0e34;
   display: flex;
-  width: 200px;
+
+  background-color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  color: #0d0e34;
 }
 
 .btn-title {
-  white-space: nowrap;
   margin-left: 7px;
+
+  white-space: nowrap;
 }
 
 .color-purple {
@@ -56,25 +65,29 @@ body {
   background-color: #fdeb5d;
 }
 
-.header-right {
-  padding: 0;
-}
+.header-image {
+  height: 200px;
+  width: 200px;
 
-.video-frame {
-  border-radius: 15px;
+  /* background: url(./images/photo.png) no-repeat; */
+  background: url("https://api.iconify.design/twemoji/woman-surfing.svg")
+    no-repeat center center / contain;
+  background-size: 100%;
 }
 
 /* Homework container */
 
 .main-title {
   margin: 40px 0 0;
-  color: #0d0e34;
   padding: 0;
+
+  color: #0d0e34;
 }
 
 .homework-container {
-  justify-content: space-around;
   margin: 0 100px 20px;
+
+  justify-content: space-around;
   align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
@@ -82,33 +95,38 @@ body {
 }
 
 .homework-item {
-  border: 1px solid lightgray;
+  min-width: 275px;
+
+  padding: 20px;
+  margin: 10px;
+
   justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 0 0 26%;
+
+  border: 1px solid lightgray;
   text-decoration: none;
   border-radius: 18px;
-  align-items: center;
   color: #0d0e34;
-  flex: 0 0 26%;
-  display: flex;
-  padding: 20px;
-  width: 275px;
-  height: 60px;
-  margin: 10px;
 }
 
 .homework-item--empty {
-  flex: 0 0 25%;
-  padding: 20px;
   width: 275px;
   height: 60px;
+
+  padding: 20px;
   margin: 15px;
+
+  flex: 0 0 25%;
 }
 
 .homework-item__title {
+  margin: 20px;
+
   text-decoration: none;
   white-space: nowrap;
   font-size: small;
-  margin: 20px;
 }
 
 .homework-item:hover {
@@ -131,11 +149,13 @@ body {
 /* Footer */
 
 .footer-wrapper {
-  font-size: small;
   padding: 30px;
+
+  font-size: small;
 }
 
 .email {
-  color: #0d0e34;
   display: inline;
+
+  color: #0d0e34;
 }

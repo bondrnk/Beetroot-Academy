@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Miso Regular";
+  src: url("./fonts/miso-regular.ttf");
+}
+
+@font-face {
+  font-family: "Miso Bold";
+  src: url("./fonts/miso-bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdde7e;
+}
+
+.header-wrapper {
+  margin: 2% auto 0;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-nav {
+  display: inline-block;
+}
+
+.nav-home {
+  padding: 3px 10px 10px;
+
+  display: inline-block;
+
+  background-color: white;
+  font-family: "Miso Bold";
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: 0.2s cubic-bezier(0.02, 0.12, 0.85, 0.58);
+}
+
+.nav-home:hover {
+  padding: 6px 15px 13px;
+
+  opacity: 0.8;
+
+  transition: 0.2s cubic-bezier(0.02, 0.12, 0.85, 0.58);
+}
+
+.main-wrapper {
+  height: 60vh;
+
+  margin: 1% auto;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.main-item {
+  padding: 1% 6% 2.5%;
+  margin: 0.7%;
+
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+
+  background-color: white;
+  color: #333333;
+
+  transition: 0.25s cubic-bezier(0.02, 0.12, 0.85, 0.58);
+}
+
+.main-item:hover {
+  padding: 3% 7% 4%;
+  margin: 0 2%;
+
+  transition: 0.25s cubic-bezier(0.02, 0.12, 0.85, 0.58);
+}
+
+.main-item:hover .item__image {
+  width: 100px;
+  margin: 30px 0 15px;
+
+  transition: 0.25s cubic-bezier(0.02, 0.12, 0.85, 0.58);
+}
+
+.item__price {
+  font-family: "Miso Bold";
+  text-decoration: none;
+  color: #02995b;
+  font-size: 44px;
+}
+
+.item__image {
+  width: 80px;
+
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.item__title {
+  font-family: "Miso Regular";
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 36px;
+}
+
+.item__description {
+  max-width: 120px;
+
+  margin-top: 25px;
+
+  font-family: "Lato";
+  text-align: center;
+  font-size: 14px;
+}

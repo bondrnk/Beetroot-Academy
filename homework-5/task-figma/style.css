@@ -188,7 +188,8 @@ body {
 }
 
 .header-link {
-  justify-content: flex-start;
+  width: fit-content;
+
   align-items: center;
   display: flex;
 

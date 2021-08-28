@@ -59,7 +59,11 @@
 /* Main */
 
 .main-wrapper {
-  margin: 40px 7vw 0;
+  /* ??? Неправильні margin */
+  /* margin: 40px 7vw 0;  */
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
 
   justify-content: center;
   align-items: center;

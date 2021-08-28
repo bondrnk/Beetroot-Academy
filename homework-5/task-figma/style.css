@@ -126,11 +126,11 @@ body {
 }
 
 .intro-social__text {
-  /* !!! Strange size of rotated text */
-  margin: 0 -30px 45px -30px;
+  margin-bottom: 50px;
 
   transform: rotate(90deg);
   text-decoration: none;
+  white-space: nowrap;
   color: white;
 }
 
@@ -266,7 +266,7 @@ body {
 
 /* Main */
 
-.contain-wrapper {
+.content-wrapper {
   margin: 550px 155px 0;
 }
 
@@ -363,7 +363,7 @@ body {
 /* Footer */
 
 .footer-wrapper {
-  margin: 0 155px 60px;
+  padding: 0 155px 60px;
 
   justify-content: space-between;
   align-items: flex-start;

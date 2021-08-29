@@ -46,17 +46,15 @@ body {
 }
 
 .nav-home:hover {
-  padding: 6px 15px 13px;
-
-  opacity: 0.8;
+  padding: 3px 15px 10px;
 
   transition: 0.2s cubic-bezier(0.02, 0.12, 0.85, 0.58);
 }
 
 .main-wrapper {
-  height: 60vh;
+  height: 400px;
 
-  margin: 1% auto;
+  margin: 2% auto;
 
   justify-content: center;
   align-items: center;
@@ -78,8 +76,10 @@ body {
 }
 
 .main-item:hover {
-  padding: 3% 7% 4%;
-  margin: 0 2%;
+  padding: 3% 6% 4%;
+  margin: 0.7%;
+
+  cursor: pointer;
 
   transition: 0.25s cubic-bezier(0.02, 0.12, 0.85, 0.58);
 }

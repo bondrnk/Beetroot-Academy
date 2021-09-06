@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+}
+
+.l-nav-home {
+  margin-top: 30px;
+
+  justify-content: center;
+  display: flex;
+}
+
+.c-nav-home {
+  font-size: 12px;
+}
+
+.c-nav-home__link {
+  padding: 7px 10px;
+
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+
+  color: rgba(17, 17, 17, 0.5);
+  text-decoration: none;
+}
+
+.c-nav-home:hover {
+  transform: scale(1.1);
+
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}

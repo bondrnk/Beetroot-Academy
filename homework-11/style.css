@@ -1,0 +1,290 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+    url("./fonts/poppins-v15-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/poppins-v15-latin-500.woff2") format("woff2"),
+    url("./fonts/poppins-v15-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/poppins-v15-latin-600.woff2") format("woff2"),
+    url("./fonts/poppins-v15-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/poppins-v15-latin-700.woff2") format("woff2"),
+    url("./fonts/poppins-v15-latin-700.woff") format("woff");
+}
+
+/* Global */
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2f281e;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  max-width: 1400px;
+
+  padding: 30px 125px;
+
+  font-family: "Poppins", sans-serif;
+  color: #2f281e;
+}
+
+/* Header */
+
+.c-header {
+  padding: 0 15px;
+}
+
+.c-header__wrapper {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+/* Logo */
+
+.c-logo {
+  width: 165px;
+
+  margin-right: auto;
+}
+
+.c-logo__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.c-logo__image {
+  height: 30px;
+  width: 30px;
+}
+
+.c-logo__text {
+  word-spacing: 5px;
+  font-weight: 600;
+  color: #173a56;
+  font-size: 26px;
+}
+
+/* Navigation */
+
+.c-nav {
+  margin-right: 40px;
+}
+
+.c-nav__wrapper {
+  width: 290px;
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.c-nav__link {
+  font-size: 12px;
+}
+
+/* Button */
+
+.l-button {
+  margin-left: 15px;
+}
+
+.c-button {
+  width: 100px;
+  height: 40px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  background-color: #ff9900;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+.c-button--white {
+  border: 1px solid #bcd0e5;
+  background-color: white;
+  color: #2f281e;
+}
+
+.c-button--small {
+  width: 90px;
+}
+
+.c-button--wide {
+  width: 160px;
+  height: 50px;
+}
+
+.c-button--bold {
+  font-weight: 700;
+}
+
+/* Main */
+
+.main__wrapper {
+  margin-left: 15px;
+  margin-top: 45px;
+}
+
+/* Introduction */
+
+.c-introduction__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.c-introduction__information {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+
+.c-introduction__title {
+  font-size: 20px;
+}
+
+.c-introduction__text {
+  max-width: 400px;
+  margin-top: 30px;
+
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.c-introduction__links {
+  margin-top: 50px;
+
+  align-items: center;
+  display: flex;
+}
+
+.c-introduction__video-link {
+  margin-left: 25px;
+
+  align-items: center;
+  display: flex;
+
+  text-decoration: underline;
+  color: #ff9900;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.c-introduction__video-link__svg {
+  height: 15px;
+  width: 15px;
+}
+
+.c-introduction__video-link__text {
+  margin-left: 10px;
+}
+
+.c-introduction__picture {
+  width: 550px;
+}
+
+/* Features */
+
+.c-features {
+  margin-top: 90px;
+}
+
+.c-features__wrapper {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.c-features__title {
+  max-width: 450px;
+
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.c-features__items {
+  width: 100%;
+
+  margin-bottom: 30px;
+  margin-top: 45px;
+  padding: 0 15px;
+
+  justify-content: space-between;
+  display: flex;
+}
+
+.c-features__item {
+  max-width: 200px;
+
+  flex-direction: column;
+  display: flex;
+}
+
+.c-features__item__svg {
+  height: 45px;
+  width: 45px;
+}
+
+.c-features__item__title {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.c-features__item__text {
+  margin-top: 15px;
+
+  line-height: 24px;
+  word-spacing: 2px;
+  font-size: 14px;
+}

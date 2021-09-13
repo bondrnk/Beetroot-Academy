@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-12</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../home-page/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My style -->
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Home button -->
+        <div class="l-nav-home">
+            <nav class="c-nav-home">
+                <a class="c-nav-home__link" href="../home-page/index.html" title="Back to all homeworks">Home</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="l-contact-us">
+            <div class="l-contact-us__wrapper">
+
+                <!-- Title -->
+                <h2 class="title">Contact Us</h2>
+
+                <!-- Form -->
+                <form method="GET" action="#" class="c-contact-us">
+                    <div class="c-contact-us__wrapper">
+
+                        <!-- Name -->
+                        <label class="c-contact-us__item">
+                            <div class="c-contact-us__item__title" title="Input your name here">Full Name</div>
+                            <input class="c-contact-us__input" name="name" type="text" placeholder="Ram Kaji" required>
+                        </label>
+
+                        <!-- Email -->
+                        <label class="c-contact-us__item">
+                            <div class="c-contact-us__item__title" title="Input your email here">Your Email Address
+                            </div>
+                            <input class="c-contact-us__input" name="email" type="email"
+                                placeholder="hello@lastdoor.store" required>
+                        </label>
+
+                        <!-- Message -->
+                        <label class="c-contact-us__item">
+                            <div class="c-contact-us__item__title" title="Type some message">Your Message</div>
+                            <textarea class="c-contact-us__textarea" name="message"
+                                placeholder="Type your message here..."></textarea>
+                        </label>
+
+                        <!-- Form button -->
+                        <button type="submit" class="c-contact-us__button" title="Click to submit">
+                            <span>Submit Your Message</span>
+                        </button>
+
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <span class="footer__text">Copyright &copy 2021 Hanna Bondarenko</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

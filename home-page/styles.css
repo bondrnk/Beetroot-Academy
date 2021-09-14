@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,8 +80,7 @@ body {
 /* Homework container */
 
 .main-title {
-  margin: 40px 0 0;
-  padding: 0;
+  padding: 20px 0 0;
 
   color: #0d0e34;
 }

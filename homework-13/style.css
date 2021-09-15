@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "";
+  src: url("./fonts/") format("woff2"), url("./fonts/") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+}
+
+/* Header */
+
+.l-nav-home {
+  margin-top: 50px;
+
+  justify-content: center;
+  display: flex;
+}
+
+.c-nav-home {
+  font-size: 14px;
+
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.c-nav-home__link {
+  padding: 7px 10px;
+
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+
+  color: rgba(17, 17, 17, 0.7);
+  text-decoration: none;
+}
+
+.c-nav-home:hover {
+  transform: scale(1.2);
+
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Main */
+
+.c-main {
+  background-color: white;
+
+  max-width: 900px;
+
+  margin: 50px auto;
+  padding: 100px;
+
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.c-main__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px 50px;
+  justify-items: center;
+}
+
+/* Svg */
+
+.svg__img {
+  width: 120px;
+  height: 120px;
+
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg__img:hover {
+  transform: scale(1.5);
+
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.crown:hover polygon {
+  stroke: #fbd971;
+}
+
+.crown:hover line {
+  stroke: #f29c1f;
+}
+
+.emoji-squinted * {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-squinted .eye-left--open {
+  display: none;
+}
+
+.emoji-squinted:hover .eye-left--closed {
+  display: none;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-squinted:hover .eye-left--open {
+  display: block;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-sad * {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-sad:hover .emoji-sad__head {
+  fill: mistyrose;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-sad .emoji-sad__mouth-smile {
+  display: none;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-sad:hover .emoji-sad__mouth-straight {
+  display: none;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emoji-sad:hover .emoji-sad__mouth-smile {
+  display: block;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-calc * {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-calc:hover .calc-plus {
+  transform: translateY(20px);
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-calc:hover .calc-minus {
+  transform: translateX(-20px);
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-calc:hover .calc-mult {
+  transform: translateX(20px);
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-calc:hover .calc-div {
+  transform: translateY(-20px);
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.youtube:hover {
+  transform: rotate(360deg);
+  transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card * {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card__info--red {
+  transform: translateX(10px);
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card__info--blue {
+  transform: translateX(-10px);
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

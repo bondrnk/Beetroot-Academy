@@ -1,0 +1,36 @@
+mixin navigation() 
+  nav.c-navigation 
+    .c-navigation__wrapper 
+
+      //- Left navigation
+      .c-navigation__left
+        .c-navigation__item
+          +link({
+            href: '#section-description',
+            text: 'About'
+          })
+        .c-navigation__item
+          +link({
+            text: 'Help',
+            lightText: true
+          })
+        .c-navigation__item
+          +link({
+            text: 'Features',
+            lightText: true
+          })
+        .c-navigation__item
+          +link({
+            text: 'Sign up',
+            lightText: true
+          })
+
+      //- Right navigation
+      .c-navigation__right
+        .c-navigation__item
+          +link({
+            button: true,
+            buttonColor: 'white',
+            text: 'Request Demo',
+            endIcon: true
+          })

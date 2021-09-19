@@ -1,0 +1,6 @@
+.e-logo {
+  &__wrapper {
+    @include size(45);
+    cursor: auto;
+  }
+}

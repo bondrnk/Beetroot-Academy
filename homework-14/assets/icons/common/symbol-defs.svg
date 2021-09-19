@@ -1,0 +1,21 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+
+    <!-- Arrow -->
+    <symbol id="icon-arrow" viewBox="0 0 44 32">
+      <title>arrow</title>
+      <path fill="none" stroke="#9c69e2" style="stroke: var(--color1, #9c69e2)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M29.943 29.9l11.915-13.9-11.915-13.9"></path>
+      <path fill="none" stroke="#9c69e2" style="stroke: var(--color1, #9c69e2)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M41.857 16h-39.715"></path>
+    </symbol>
+
+    <!-- Logo -->
+    <symbol id="icon-logo" viewBox="0 0 32 32">
+      <title>logo</title>
+      <path fill="#9c69e2" style="fill: var(--color1, #9c69e2)" d="M6.531 14.367c3.607 0 6.531 2.924 6.531 6.531s-2.924 6.531-6.531 6.531c-3.607 0-6.531-2.924-6.531-6.531s2.924-6.531 6.531-6.531z"></path>
+      <path fill="#f063b8" style="fill: var(--color2, #f063b8)" d="M25.469 4.571c3.607 0 6.531 2.924 6.531 6.531v9.796c0 3.607-2.924 6.531-6.531 6.531s-6.531-2.924-6.531-6.531v-9.796c0-3.607 2.924-6.531 6.531-6.531z"></path>
+    </symbol>
+
+  </defs>
+</svg>

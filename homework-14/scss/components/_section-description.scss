@@ -1,0 +1,44 @@
+.c-section-description {
+  margin-top: 200px;
+  margin-bottom: 80px;
+
+  &__wrapper {
+    padding: 30px 50px 20px 10px;
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    background-color: rgba($c-pink, 0.15);
+    border-radius: 50px;
+  }
+
+  &__image {
+    max-width: 450px;
+
+    margin-right: 50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 440px;
+
+    margin-bottom: 40px;
+
+    font-family: $f-helvetica;
+    font-size: em(36);
+
+    cursor: default;
+  }
+
+  &__text {
+    max-width: 440px;
+    font-size: em(16);
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,46 @@
+mixin feature()
+  section.c-section-features 
+    .c-section-features__wrapper 
+      .c-section-features__title 
+      .c-section-features__description 
+      .c-section-features__feature-cards 
+        .c-card
+          .c-card__title 
+            h5 Search Data
+          .c-card__text
+            p Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.
+          .c-card__link
+            +link({
+              text: "Learn more",
+              endIcon: true;
+            })
+        .c-card
+          .c-card__title 
+            h5 24 Hours Access
+          .c-card__text
+            p Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.
+          .c-card__link
+            +link({
+              text: "Learn more",
+              endIcon: true;
+              })
+        .c-card
+          .c-card__title 
+            h5 Print Out
+          .c-card__text
+            p Print out service gives you convenience if someday you need print data, just edit it all and just print it.
+          .c-card__link
+            +link({
+              text: "Learn more",
+              endIcon: true;
+            })
+        .c-card
+          .c-card__title 
+            h5 Security Code
+          .c-card__text
+            p Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.
+          .c-card__link
+            +link({
+              text: "Learn more",
+              endIcon: true;
+            })

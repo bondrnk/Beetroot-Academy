@@ -1,0 +1,23 @@
+mixin banner()
+  .c-banner.wrapper
+    .c-banner__wrapper
+
+      //- Banner title
+      .c-banner__title
+        h1 Save your data storage here.
+
+      //- Banner text
+      .c-banner__text
+        p Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
+
+      //- Banner button
+      .c-banner__button 
+        +link({
+          button: true,
+          buttonColor: 'purple',
+          text: 'Learn more'
+        })
+
+    //-  Background image
+    .c-banner__background
+      img(src="assets/images/banner-background.png" alt="Banner background")

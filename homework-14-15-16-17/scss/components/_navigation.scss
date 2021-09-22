@@ -10,8 +10,8 @@
     align-items: center;
     display: flex;
 
-    @include media("<970px") {
-      display: none;
+    & &__item:hover {
+      border-bottom: 2px solid rgba($c-purple, 0.8);
     }
   }
 
@@ -19,19 +19,64 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-
-    @include media("<phone") {
-      font-size: em(12);
-
-      display: none;
-    }
   }
 
   &__item {
     margin-right: 40px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
-  &__item:last-child {
-    margin: 0;
+  // Media for burger-menu
+
+  @include media("<tablet") {
+    &__wrapper {
+      width: 100%;
+
+      padding: 10px;
+
+      flex-direction: column;
+
+      position: fixed;
+      z-index: 100;
+      right: -100%;
+      top: 100px;
+
+      background-color: rgba($c-purple, 0.95);
+      border-radius: 30px;
+      text-align: center;
+
+      box-shadow: 0 10px 27px rgba($c-shadow-black, 0.05);
+      transition: $t-normal;
+
+      &.active {
+        right: 0;
+      }
+    }
+
+    &__left {
+      flex-direction: column;
+    }
+
+    &__right {
+      flex-direction: column;
+    }
+
+    &__item {
+      font-size: em(16);
+      margin: 15px;
+
+      &:last-child {
+        margin: 15px;
+      }
+    }
+  }
+
+  @include media("<phone") {
+    &__wrapper {
+      top: 90px;
+    }
   }
 }

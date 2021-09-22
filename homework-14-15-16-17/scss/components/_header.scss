@@ -2,19 +2,6 @@
   margin-bottom: 80px;
   margin-top: 40px;
 
-  @include media("<desktop") {
-    margin-bottom: 50px;
-  }
-
-  @include media("<tablet") {
-    margin-bottom: 50px;
-  }
-
-  @include media("<400px") {
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -27,5 +14,26 @@
 
   &__navigation {
     flex-grow: 1;
+  }
+
+  @include media("<desktop") {
+    margin-bottom: 50px;
+  }
+
+  @include media("<tablet") {
+    margin-bottom: 50px;
+
+    &__navigation {
+      flex-grow: 0;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+  }
+
+  @include media("<400px") {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }

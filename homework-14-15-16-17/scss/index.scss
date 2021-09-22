@@ -1,17 +1,17 @@
-// ! Normalize
-@import './plugins/normalize';
+// Normalize
+@import "./plugins/normalize";
 // Fonts
-@import './fonts';
-// ! Media
-@import './media';
+@import "./fonts";
+// Media
+@import "./media";
 // Config
-@import './variables';
+@import "./variables";
 // Mixins
-@import './mixins';
+@import "./mixins";
 // Plugins
-@import './plugins/index';
+@import "./plugins/index";
 // Main style
-@import './main';
+@import "./main";
 // All style
-@import './elements/index';
-@import './components/index';
+@import "./elements/index";
+@import "./components/index";

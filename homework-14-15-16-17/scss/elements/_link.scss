@@ -47,4 +47,10 @@
     font-weight: 400;
     color: $c-grey;
   }
+
+  @include media("<tablet") {
+    &:not(&--button) {
+      color: $c-white;
+    }
+  }
 }

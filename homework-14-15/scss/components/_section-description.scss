@@ -1,0 +1,102 @@
+.c-section-description {
+  margin-top: 200px;
+  margin-bottom: 65px;
+
+  @include media("<desktop") {
+    margin-top: 50px;
+  }
+
+  @include media("<phone") {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    padding: 30px 50px 20px 10px;
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    background-color: rgba($c-pink, 0.15);
+    border-radius: 50px;
+
+    @include media("<970px") {
+      padding: 0 50px 20px;
+
+      flex-direction: column;
+    }
+
+    @include media("<400px") {
+      padding: 0 20px 20px;
+      border-radius: 30px;
+    }
+  }
+
+  &__image {
+    max-width: 450px;
+
+    margin-right: 50px;
+
+    @include media("<970px") {
+      max-width: 300px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media("<970px") {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    max-width: 440px;
+
+    margin-bottom: 40px;
+
+    font-family: $f-helvetica;
+    font-size: em(36);
+
+    cursor: default;
+
+    @include media("<desktop") {
+      font-size: em(34);
+    }
+
+    @include media("<970px") {
+      max-width: 400px;
+
+      margin-bottom: 20px;
+    }
+
+    @include media("<tablet") {
+      font-size: em(30);
+    }
+
+    @include media("<400px") {
+      font-size: em(24);
+    }
+  }
+
+  &__text {
+    max-width: 440px;
+    font-size: em(16);
+    line-height: 25px;
+
+    @include media("<desktop") {
+      font-size: em(14);
+    }
+
+    @include media("<970px") {
+      max-width: 500px;
+    }
+
+    @include media("<tablet") {
+      font-size: em(12);
+    }
+  }
+}

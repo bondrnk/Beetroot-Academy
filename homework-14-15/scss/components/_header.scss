@@ -2,6 +2,19 @@
   margin-bottom: 80px;
   margin-top: 40px;
 
+  @include media("<desktop") {
+    margin-bottom: 50px;
+  }
+
+  @include media("<tablet") {
+    margin-bottom: 50px;
+  }
+
+  @include media("<400px") {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;

@@ -9,12 +9,22 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+
+    @include media("<970px") {
+      display: none;
+    }
   }
 
   &__right {
     justify-content: space-between;
     align-items: center;
     display: flex;
+
+    @include media("<phone") {
+      font-size: em(12);
+
+      display: none;
+    }
   }
 
   &__item {

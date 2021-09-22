@@ -1,0 +1,112 @@
+.c-banner {
+  position: relative;
+
+  @include media("<=desktop") {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  &__background {
+    max-width: 800px;
+
+    position: absolute;
+    right: -50px;
+    z-index: -1;
+    bottom: -100px;
+
+    @include media("<1200px") {
+      max-width: 690px;
+      right: 5px;
+    }
+
+    @include media("<=desktop") {
+      position: initial;
+    }
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+
+    @include media("<=desktop") {
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+
+      text-align: center;
+    }
+  }
+
+  &__title {
+    max-width: 600px;
+
+    margin-bottom: 40px;
+
+    font-family: $f-helvetica;
+    font-size: em(36);
+    font-weight: 700;
+
+    cursor: default;
+
+    @include media("<desktop") {
+      font-size: em(34);
+    }
+
+    @include media("<tablet") {
+      max-width: 400px;
+
+      margin-bottom: 20px;
+
+      font-size: em(24);
+    }
+
+    @include media("<phone") {
+      font-size: em(22);
+    }
+
+    @include media("<400px") {
+      font-size: em(18);
+    }
+  }
+
+  &__text {
+    max-width: 340px;
+
+    margin-bottom: 50px;
+
+    font-size: em(16);
+    line-height: 25px;
+
+    @include media("<desktop") {
+      max-width: 600px;
+
+      margin-bottom: 20px;
+
+      font-size: em(14);
+    }
+
+    @include media("<tablet") {
+      max-width: 400px;
+
+      font-size: em(12);
+    }
+  }
+
+  &__button {
+    @include media("<desktop") {
+      margin-bottom: 50px;
+    }
+
+    @include media("<phone") {
+      font-size: em(12);
+    }
+
+    @include media("<400px") {
+      margin-bottom: 30px;
+    }
+  }
+}

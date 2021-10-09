@@ -1,0 +1,25 @@
+.c-task-container {
+  background-color: rgba($c-pink, 0.2);
+  border: 2px solid $c-grey;
+  border-radius: 20px;
+  margin: 50px 80px;
+
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 50px;
+    width: 100%;
+  }
+
+  &__task {
+    background-color: $c-white;
+    border: 2px solid $c-grey;
+    border-radius: 20px;
+    margin: 10px 10px;
+    height: 200px;
+    height: 230px;
+    width: 300px;
+  }
+}

@@ -21,6 +21,10 @@ body {
   font-size: $fs-base + px;
   font-family: $f-avenir;
   color: $c-dark-blue;
+
+  @include media("<tablet") {
+    background-color: rgba($c-pink, 0.2);
+  }
 }
 
 .icon {

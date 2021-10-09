@@ -353,6 +353,9 @@ body {
   font-size: 14px;
   font-family: "Avenir", sans-serif;
   color: #212353; }
+  @media (max-width: 767px) {
+    body {
+      background-color: rgba(240, 99, 184, 0.2); } }
 
 .icon {
   display: inline-block;
@@ -434,21 +437,34 @@ svg {
   border: 2px solid #4b5d68;
   border-radius: 20px;
   margin: 50px 80px; }
+  @media (max-width: 767px) {
+    .c-task-container {
+      background-color: unset;
+      border-radius: 0;
+      border: none;
+      height: 100%;
+      margin: 0; } }
   .c-task-container__wrapper {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     display: flex;
     padding: 50px;
     width: 100%; }
+    @media (max-width: 767px) {
+      .c-task-container__wrapper {
+        padding: 20px; } }
   .c-task-container__task {
     background-color: #fff;
     border: 2px solid #4b5d68;
     border-radius: 20px;
     margin: 10px 10px;
-    height: 200px;
-    height: 230px;
+    height: 250px;
     width: 300px; }
+    @media (max-width: 767px) {
+      .c-task-container__task {
+        height: 180px;
+        width: 200px; } }
 
 .c-task-card {
   font-family: "Avenir", sans-serif;
@@ -464,10 +480,18 @@ svg {
     margin-bottom: 10px;
     font-size: 1.71429em;
     font-weight: 600; }
+    @media (max-width: 767px) {
+      .c-task-card__title {
+        margin-bottom: 5px;
+        font-size: 1.42857em; } }
   .c-task-card__description {
     margin-bottom: 10px;
     font-size: 1em;
     font-weight: 400; }
+    @media (max-width: 767px) {
+      .c-task-card__description {
+        margin-bottom: 5px;
+        font-size: 0.71429em; } }
   .c-task-card__button {
     background-color: #68c9ba;
     border-radius: 20px;
@@ -476,3 +500,6 @@ svg {
     width: fit-content;
     font-weight: 600;
     color: #fff; }
+    @media (max-width: 767px) {
+      .c-task-card__button {
+        font-size: 0.71429em; } }

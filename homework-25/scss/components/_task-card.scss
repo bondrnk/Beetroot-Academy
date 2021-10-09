@@ -15,12 +15,22 @@
     margin-bottom: 10px;
     font-size: em(24);
     font-weight: 600;
+
+    @include media("<tablet") {
+      margin-bottom: 5px;
+      font-size: em(20);
+    }
   }
 
   &__description {
     margin-bottom: 10px;
     font-size: em(14);
     font-weight: 400;
+
+    @include media("<tablet") {
+      margin-bottom: 5px;
+      font-size: em(10);
+    }
   }
 
   &__button {
@@ -31,5 +41,9 @@
     width: fit-content;
     font-weight: 600;
     color: $c-white;
+
+    @include media("<tablet") {
+      font-size: em(10);
+    }
   }
 }

@@ -1,0 +1,41 @@
+.c-task-container {
+  background-color: rgba($c-green, 0.2);
+  border: 2px solid $c-grey;
+  border-radius: 20px;
+  margin: 50px 80px;
+
+  @include media("<tablet") {
+    background-color: unset;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    margin: 0;
+  }
+
+  &__wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 50px;
+    width: 100%;
+
+    @include media("<tablet") {
+      padding: 20px;
+    }
+  }
+
+  &__task {
+    background-color: $c-white;
+    border: 2px solid $c-grey;
+    border-radius: 20px;
+    margin: 10px 10px;
+    height: 250px;
+    width: 300px;
+
+    @include media("<tablet") {
+      height: 180px;
+      width: 200px;
+    }
+  }
+}

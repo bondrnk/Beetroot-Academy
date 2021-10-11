@@ -1,0 +1,56 @@
+.e-link {
+  max-width: fit-content;
+
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  display: flex;
+
+  color: $c-dark-blue;
+  font-size: em(14);
+  font-weight: 500;
+
+  &__svg {
+    width: 20px;
+
+    margin-left: 20px;
+  }
+
+  &--button {
+    padding: 20px 40px;
+
+    border-radius: 50px;
+  }
+
+  &--button-white {
+    padding: 20px 30px;
+
+    background-color: $c-white;
+    box-shadow: $bs-button;
+  }
+
+  &--button-purple {
+    font-size: em(16);
+    color: $c-white;
+
+    background-color: $c-purple;
+  }
+
+  &--button-pink {
+    font-size: em(16);
+    color: $c-white;
+
+    background-color: $c-pink;
+  }
+
+  &--lighter-text {
+    font-weight: 400;
+    color: $c-grey;
+  }
+
+  @include media("<tablet") {
+    &:not(&--button) {
+      color: $c-white;
+    }
+  }
+}

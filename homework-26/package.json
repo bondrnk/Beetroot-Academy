@@ -1,0 +1,14 @@
+{
+  "name": "homework-26",
+  "version": "1.0.0",
+  "description": "homework-26",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o ."
+  },
+  "author": "Anna Bondarenko (hanna.bondarenko.s@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

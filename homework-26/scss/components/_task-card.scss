@@ -1,0 +1,49 @@
+.c-task-card {
+  font-family: $f-avenir;
+  height: 100%;
+
+  &__wrapper {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: em(24);
+    font-weight: 600;
+
+    @include media("<tablet") {
+      margin-bottom: 5px;
+      font-size: em(20);
+    }
+  }
+
+  &__description {
+    margin-bottom: 10px;
+    font-size: em(14);
+    font-weight: 400;
+
+    @include media("<tablet") {
+      margin-bottom: 5px;
+      font-size: em(10);
+    }
+  }
+
+  &__button {
+    background-color: $c-green;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    width: fit-content;
+    font-weight: 600;
+    color: $c-white;
+
+    @include media("<tablet") {
+      font-size: em(10);
+    }
+  }
+}

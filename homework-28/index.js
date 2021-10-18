@@ -215,30 +215,34 @@ async function task2() {
     simplify: ', '
   };
 
-  const value = await swal({
-    buttons: {
-      sum: {
-        text: 'Додати',
-        value: 'sum'
-      },
-      subtract: {
-        text: 'Відняти',
-        value: 'subtract'
-      },
-      multiply: {
-        text: 'Помножити',
-        value: 'multiply'
-      },
-      divide: {
-        text: 'Поділити',
-        value: 'divide'
-      },
-      simplify: {
-        text: 'Спростити',
-        value: 'simplify'
+  if (!number1.numerator % 1 || !number1.denominator % 1 || !number2.numerator % 1 || !number2.denominator % 1) {
+    const value = await swal({
+      buttons: {
+        sum: {
+          text: 'Додати',
+          value: 'sum'
+        },
+        subtract: {
+          text: 'Відняти',
+          value: 'subtract'
+        },
+        multiply: {
+          text: 'Помножити',
+          value: 'multiply'
+        },
+        divide: {
+          text: 'Поділити',
+          value: 'divide'
+        },
+        simplify: {
+          text: 'Спростити',
+          value: 'simplify'
+        }
       }
-    }
-  });
+    });
 
-  successSwal(number1.numerator + '/' + number1.denominator + symbol[value] + number2.numerator + '/' + number2.denominator + ' = ' + operations[value](number1, number2));
+    successSwal(number1.numerator + '/' + number1.denominator + symbol[value] + number2.numerator + '/' + number2.denominator + ' = ' + operations[value](number1, number2));
+  } else {
+    errorSwal('Введіть цілі числа!');
+  }
 }

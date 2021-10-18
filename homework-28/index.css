@@ -367,7 +367,7 @@ body {
     stroke-width: 0; }
 
 *::selection {
-  background-color: rgba(33, 35, 83, 0.3); }
+  background-color: rgba(33, 35, 83, 0.4); }
 
 *::-webkit-scrollbar {
   border-radius: 10px;
@@ -433,10 +433,10 @@ svg {
       color: #fff; } }
 
 .c-task-container {
-  background-color: rgba(104, 201, 186, 0.2);
+  background-color: rgba(156, 105, 226, 0.2);
   border: 2px solid #4b5d68;
   border-radius: 20px;
-  margin: 50px 80px; }
+  margin: 50px 50px; }
   @media (max-width: 767px) {
     .c-task-container {
       background-color: unset;
@@ -459,12 +459,12 @@ svg {
     border: 2px solid #4b5d68;
     border-radius: 20px;
     margin: 10px 10px;
-    height: 250px;
-    width: 300px; }
+    height: 300px;
+    width: 380px; }
     @media (max-width: 767px) {
       .c-task-container__task {
-        height: 180px;
-        width: 200px; } }
+        height: 220px;
+        width: 270px; } }
 
 .c-task-card {
   font-family: "Avenir", sans-serif;
@@ -474,7 +474,7 @@ svg {
     flex-direction: column;
     align-items: center;
     display: flex;
-    padding: 20px;
+    padding: 30px 20px 20px;
     height: 100%; }
   .c-task-card__title {
     margin-bottom: 10px;

@@ -1,8 +1,8 @@
 .c-task-container {
-  background-color: rgba($c-green, 0.2);
+  background-color: rgba($c-purple, 0.2);
   border: 2px solid $c-grey;
   border-radius: 20px;
-  margin: 50px 80px;
+  margin: 50px 50px;
 
   @include media("<tablet") {
     background-color: unset;
@@ -30,12 +30,12 @@
     border: 2px solid $c-grey;
     border-radius: 20px;
     margin: 10px 10px;
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 380px;
 
     @include media("<tablet") {
-      height: 180px;
-      width: 200px;
+      height: 220px;
+      width: 270px;
     }
   }
 }

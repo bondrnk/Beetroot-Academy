@@ -1,12 +1,12 @@
-const log = console.log;
 const successSwal = (text) => swal({ text, icon: 'success' });
 const errorSwal = (text) => swal({ text, icon: 'error' });
 const warningSwal = (text) => swal({ text, icon: 'warning' });
 
 // Button clicks
 for (let i = 1; i <= 5; i++) {
-  const button = document.querySelector('.js-button' + i);
-  button.onclick = this['task' + i];
+  const button = document.getElementById('js-button' + i);
+
+  button.addEventListener('click', this['task' + i]);
 }
 
 // Task 1
@@ -34,7 +34,12 @@ async function task1() {
   let sum = null;
 
   // Перевірка чи ввели числа і чи вони цілі
-  if (Number.isInteger(numberFrom) && Number.isInteger(numberTo) && numberFrom.toString && numberTo.toString) {
+  if (
+    Number.isInteger(numberFrom)
+    && Number.isInteger(numberTo)
+    && numberFrom.toString
+    && numberTo.toString
+  ) {
     // Перевірка чи коректний діапазон ввели
     if (numberFrom <= numberTo) {
       for (let i = numberFrom; i <= numberTo; i++) {
@@ -79,7 +84,12 @@ async function task2() {
   }
 
   // Перевірка чи ввели числа і чи вони цілі
-  if (Number.isInteger(number1) && Number.isInteger(number2) && number1.toString && number2.toString) {
+  if (
+    Number.isInteger(number1)
+    && Number.isInteger(number2)
+    && number1.toString
+    && number2.toString
+  ) {
     if (number1 && number2) {
       successSwal('Найбільший дільник чисел ' + number1 + ' і ' + number2 + ' = ' + NOD(number1, number2) + '!');
     } else {
@@ -170,7 +180,6 @@ async function task5() {
     });
 
     numberList += (number.toString() + ((numberCount !== 10) ? ', ' : ''));
-    log(numberList);
 
     if (number > 0) {
       positiveNumbers++;

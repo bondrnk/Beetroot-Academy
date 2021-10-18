@@ -1,7 +1,7 @@
 {
-  "name": "homework-26",
+  "name": "homework-28",
   "version": "1.0.0",
-  "description": "homework-26",
+  "description": "homework-28",
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --watch scss -o ."

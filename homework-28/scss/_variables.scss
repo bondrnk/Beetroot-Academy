@@ -1,0 +1,24 @@
+// Colors
+$c-grey: #4b5d68;
+$c-dark-blue: #212353;
+$c-purple: #9c69e2;
+$c-pink: #f063b8;
+$c-green: #68c9ba;
+$c-white: #fff;
+$c-white-bluish: #f6fafd;
+$c-shadow-grey: #4b5d68;
+$c-shadow-black: #000;
+
+// Fonts
+$f-helvetica: "Helvetica", sans-serif;
+$f-avenir: "Avenir", sans-serif;
+
+// Font size
+$fs-base: 14;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-button: 0px 5px 5px 0px rgba($c-shadow-grey, 0.1);
+$bs-container: 0px 4px 4px 0px rgba($c-shadow-black, 0.4);

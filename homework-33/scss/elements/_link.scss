@@ -12,7 +12,7 @@
   font-weight: 500;
 
   &--button {
-    padding: 8px 30px;
+    padding: 20px 30px;
     border-radius: 2px;
     font-weight: 700;
     background-color: $c-green;
@@ -24,6 +24,10 @@
       background: linear-gradient(to bottom right, $c-blue, $c-green);
       transition: $t-long;
     }
+  }
+
+  &--center {
+    margin: 150px auto;
   }
 
   @include media("<tablet") {

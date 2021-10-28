@@ -2,7 +2,8 @@ mixin link(args)
   - let href = args.href || '#';
   - let button = args.button || false;
   - let text = args.text || 'Default link text';
+  - let center = args.center || false;
 
-  a.e-link(href=href class=`${(button ? 'e-link--button' : '')}`)
+  a.e-link(href=href class=`${(button ? 'e-link--button' : '')}` + ' ' + `${(center ? 'e-link--center' : '')}`)
     span= text 
 

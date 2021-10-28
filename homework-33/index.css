@@ -380,7 +380,7 @@ svg {
   font-size: 1em;
   font-weight: 500; }
   .e-link--button {
-    padding: 8px 30px;
+    padding: 20px 30px;
     border-radius: 2px;
     font-weight: 700;
     background-color: #13e28d;
@@ -390,6 +390,8 @@ svg {
     .e-link--button:hover {
       background: linear-gradient(to bottom right, #01d5bc, #13e28d);
       transition: 2s cubic-bezier(0.4, 0, 0.2, 1); }
+  .e-link--center {
+    margin: 150px auto; }
   @media (max-width: 767px) {
     .e-link:not(.e-link--button) {
       color: rgba(255, 255, 255, 0.8); } }
@@ -435,6 +437,7 @@ svg {
   .c-tab-container__content {
     display: none;
     margin: 0 auto;
+    height: 400px;
     background: #212534;
     padding: 10px 15px;
     color: rgba(255, 255, 255, 0.8); }
@@ -519,3 +522,11 @@ svg {
   .c-tab-information__price {
     font-size: 2.28571em;
     font-weight: 400; }
+
+.c-tab-rating-info {
+  padding: 40px; }
+  .c-tab-rating-info #circle-progress-big {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    margin: 0 auto; }

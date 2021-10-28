@@ -21,8 +21,10 @@ mixin tab-container()
       .c-tab-container__content.active
         +tab-information()
       .c-tab-container__content
-        //- +tab-rating-info()
-        | 2
+        +tab-rating-info()
       .c-tab-container__content
-        //- +tab-where-to-buy()
-        | 3
+        +link({
+          button: true,
+          text: 'BUY IT NOW',
+          center: true,
+          })

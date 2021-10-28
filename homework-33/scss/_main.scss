@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(./assets/images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-size: $fs-base + px;
+  font-family: $f-lato;
+  font-weight: 400;
+  color: $c-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+// Selection
+*::selection {
+  background-color: rgba($c-white, 0.4);
+}
+
+// Custom Scroll
+*::-webkit-scrollbar {
+  position: relative;
+  z-index: 999;
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba($c-light-blue, 0.7);
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px rgba($c-green, 0.8);
+  background-color: rgba($c-green, 0.8);
+  outline: none;
+}

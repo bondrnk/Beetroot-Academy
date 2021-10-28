@@ -1,0 +1,33 @@
+.e-link {
+  max-width: fit-content;
+
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  display: flex;
+
+  background-color: $c-white;
+  color: $c-dark-blue;
+  font-size: em(14);
+  font-weight: 500;
+
+  &--button {
+    padding: 8px 30px;
+    border-radius: 2px;
+    font-weight: 700;
+    background-color: $c-green;
+    color: $c-white;
+    font-size: em(16);
+
+    &:hover {
+      background: linear-gradient(to bottom right, $c-blue, $c-green);
+      transition: $t-long;
+    }
+  }
+
+  @include media("<tablet") {
+    &:not(&--button) {
+      color: $c-white;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+mixin tab-container()
+  .c-tab-container
+    .c-tab-container__wrapper
+
+      //- Navigation tab
+      ul.c-tab-container__nav
+        li.c-tab-container__tab.active
+          svg.c-tab-container__svg
+            use(xlink:href="#icon-tooltip")
+          span.c-tab-container__text= 'INFORMATION'
+        li.c-tab-container__tab
+          svg.c-tab-container__svg
+            use(xlink:href="#icon-card")
+          span.c-tab-container__text= 'RATINGS INFO'
+        li.c-tab-container__tab
+          svg.c-tab-container__svg
+            use(xlink:href="#icon-basket")
+          span.c-tab-container__text= 'WHERE TO BUY'
+
+      //- Tab content
+      .c-tab-container__content.active
+        +tab-information()
+      .c-tab-container__content
+        //- +tab-rating-info()
+        | 2
+      .c-tab-container__content
+        //- +tab-where-to-buy()
+        | 3

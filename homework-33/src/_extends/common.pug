@@ -1,0 +1,22 @@
+include ../_includes/elements/index
+include ../_includes/components/index
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		link(rel="shortcut icon" href="../home-page/images/favicon.ico" type="image/x-icon")
+		block title
+			title Homework-29
+		block style
+	body
+		include ../../assets/icons/common/symbol-defs.svg
+		.l-common
+			block content
+		//- JQuery
+		script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+		//- JS
+		script(src="./js/progressbar.js") 
+		script(src="./js/tab.js")
+		script(src="./js/circle-progress.js") 

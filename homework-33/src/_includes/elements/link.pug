@@ -1,0 +1,8 @@
+mixin link(args)
+  - let href = args.href || '#';
+  - let button = args.button || false;
+  - let text = args.text || 'Default link text';
+
+  a.e-link(href=href class=`${(button ? 'e-link--button' : '')}`)
+    span= text 
+

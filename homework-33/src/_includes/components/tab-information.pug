@@ -1,0 +1,45 @@
+mixin tab-information() 
+  .c-tab-information
+    .c-tab-information__wrapper
+
+      .c-tab-information__left 
+        .c-tab-information__photo 
+          img(src='./assets/images/cover-farcry4.jpg')
+        //- .c-tab-information__rating
+        //-   svg 
+        //-     use(xmlns:xlink='#icon-star')
+        //-   svg 
+        //-     use(xmlns:xlink='#icon-star')
+        //-   svg 
+        //-     use(xmlns:xlink='#icon-star')
+        //-   svg 
+        //-     use(xmlns:xlink='#icon-star')
+        //-   svg 
+        //-     use(xmlns:xlink='#icon-star')
+        .c-tab-information__rating
+          input(type='radio' id='star-5' name='rating' value='5')
+          label(for='star-5' title='Оценка 5')
+          input(type='radio' id='star-4' name='rating' value='4')
+          label(for='star-4' title='Оценка 4')
+          input(type='radio' id='star-3' name='rating' value='3')
+          label(for='star-3' title='Оценка 3')
+          input(type='radio' id='star-2' name='rating' value='2')
+          label(for='star-2' title='Оценка 2')
+          input(type='radio' id='star-1' name='rating' value='1')
+          label(for='star-1' title='Оценка 1')
+
+      .c-tab-information__right
+        .c-tab-information__general 
+          .c-tab-information__name-wrapper
+            h2.c-tab-information__name= 'FarCry 4'
+            h4.c-tab-information__release= 'First Release Nov 17, 2014'
+          #circle-progress
+        h5.c-tab-information__description= 'In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.'
+        .c-tab-information__purchase
+          .c-tab-information__price-wrapper
+            h5.c-tab-information__discount= '20% OFF!'
+            h6.c-tab-information__price= '$59.96'
+          +link({
+            button: true,
+            text: 'BUY IT NOW'
+          })

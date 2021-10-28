@@ -1,0 +1,24 @@
+// Colors
+$c-dark-blue: #212534;
+$c-shadow-blue: #1e212e;
+$c-blue: #292d3e;
+$c-light-blue: #2b3040;
+$c-white: rgba(#fff, 0.8);
+$c-light-grey: #bdc3c7;
+$c-black: #000;
+$c-green: #13e28d;
+$c-yellow: #f7d63f;
+$c-blue: #01d5bc;
+
+// Fonts
+$f-lato: "Lato", sans-serif;
+
+// Font size
+$fs-base: 14;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+$t-long: 2s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-normal: -1px 12px 25px 5px rgba($c-black, 0.35);

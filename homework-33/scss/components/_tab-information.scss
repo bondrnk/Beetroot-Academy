@@ -1,0 +1,123 @@
+.c-tab-information {
+  width: 100%;
+  &__wrapper {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+  }
+
+  &__left {
+    width: fit-content;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  &__rating {
+    overflow: hidden;
+
+    &:not(:checked) > input {
+      display: none;
+    }
+
+    &:not(:checked) > label {
+      float: right;
+      width: 25px;
+      padding: 0;
+      cursor: pointer;
+      font-size: em(18);
+      line-height: 25px;
+      color: $c-light-grey;
+    }
+
+    &:not(:checked) > label:before {
+      content: "★";
+    }
+
+    & > input:checked ~ label {
+      color: $c-yellow;
+    }
+
+    &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label {
+      color: $c-yellow;
+    }
+
+    & > input:checked + label:hover,
+    & > input:checked + label:hover ~ label,
+    & > input:checked ~ label:hover,
+    & > input:checked ~ label:hover ~ label,
+    & > label:hover ~ input:checked ~ label {
+      color: $c-yellow;
+    }
+
+    & > label:active {
+      position: relative;
+    }
+  }
+
+  &__right {
+    padding: 30px 25px 30px 15px;
+  }
+
+  &__general {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  &__name-wrapper {
+  }
+
+  &__name {
+    font-size: em(32);
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__release {
+    font-size: em(14);
+    font-weight: 400;
+  }
+
+  #circle-progress {
+    width: 80px;
+    height: 80px;
+    top: -10px;
+    position: relative;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    font-size: em(14);
+    font-weight: 400;
+    color: rgba($c-light-grey, 0.8);
+    line-height: 25px;
+  }
+
+  &__purchase {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price-wrapper {
+  }
+
+  &__discount {
+    margin: 0 0 5px 10px;
+    font-size: em(12);
+    color: $c-yellow;
+    font-weight: 700;
+  }
+
+  &__price {
+    font-size: em(32);
+    font-weight: 400;
+  }
+}

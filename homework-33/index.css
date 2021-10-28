@@ -385,6 +385,7 @@ svg {
     font-weight: 700;
     background-color: #13e28d;
     color: rgba(255, 255, 255, 0.8);
+    box-shadow: -1px 12px 25px 5px rgba(0, 0, 0, 0.2);
     font-size: 1.14286em; }
     .e-link--button:hover {
       background: linear-gradient(to bottom right, #01d5bc, #13e28d);
@@ -454,7 +455,8 @@ svg {
     align-items: center; }
   .c-tab-information__photo {
     width: 160px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    box-shadow: -1px 12px 25px 5px rgba(0, 0, 0, 0.2); }
   .c-tab-information__rating {
     overflow: hidden; }
     .c-tab-information__rating:not(:checked) > input {

@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./fonts/Avenir\ Next.woff2") format("woff2"),
+    url("./fonts/Avenir\ Next.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Avenir Next", sans-serif;
+  background-color: #11364e;
+  font-weight: 500;
+  color: white;
+}
+
+/* Form */
+
+.l-contact-us {
+  margin: 50px auto;
+}
+
+.l-contact-us__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.c-contact-us {
+  min-width: 330px;
+}
+
+.c-contact-us__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-contact-us__item {
+  width: 100%;
+
+  margin-bottom: 35px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  font-size: 14px;
+}
+
+.c-contact-us__item__title {
+  padding: 5px 0;
+
+  font-size: 12px;
+}
+
+.c-contact-us__input {
+  width: 100%;
+
+  padding: 5px 0;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  opacity: 0.5;
+}
+
+.c-contact-us__input:enabled {
+  color: white;
+}
+
+.c-contact-us__textarea {
+  height: 80px;
+  width: 100%;
+
+  padding: 5px 0;
+
+  background-color: transparent;
+  outline: none;
+  resize: none;
+  border: none;
+  opacity: 0.5;
+}
+
+.c-contact-us__textarea:enabled {
+  color: white;
+}
+
+/* Button */
+
+.c-contact-us__button {
+  padding: 20px;
+
+  border-radius: 3px;
+  border: none;
+
+  background-color: #ff7f57;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}

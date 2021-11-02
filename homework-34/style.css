@@ -24,6 +24,10 @@ body {
   height: 400px;
 }
 
+.swiper-wrapper {
+  user-select: none;
+}
+
 @media (max-width: 1000px) {
   .title {
     margin: 50px;

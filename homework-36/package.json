@@ -1,0 +1,16 @@
+{
+  "name": "homework-36",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "scss": "node-sass --watch . -o ."
+  },
+  "author": "Anna Bondarenko (hanna.bondarenko.s@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "fullpage.js": "^3.1.2",
+    "node-sass": "^6.0.1"
+  }
+}

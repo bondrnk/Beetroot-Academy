@@ -1,3 +1,6 @@
+// Media
+@import "./media";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,6 +26,18 @@ body {
   text-align: center;
   color: #272727;
   font-size: 42px;
+
+  @include media("<tablet") {
+    font-size: 26px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  @include media("<phone") {
+    font-size: 22px;
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 #map {
@@ -30,9 +45,9 @@ body {
   width: 100%;
 }
 
-$size: 80px;
 $speed: 3s;
 $peakopacity: 0.7;
+$size: 50px;
 
 .arrows {
   position: relative;

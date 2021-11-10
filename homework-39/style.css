@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.c-container {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 30px;
+}
+
+.c-container__text {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.button {
+  border-radius: 10px;
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+  background-color: #a3bded;
+  opacity: 0.6;
+}
+
+.width-changer {
+  animation-name: block-animation;
+  transition-property: width;
+  animation-duration: 3s;
+}
+
+.c-container-1 {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  animation-timing-function: ease;
+}
+
+.c-container-2 {
+  background: linear-gradient(#eeaeca, #94bbe9);
+  animation-timing-function: ease-in;
+}
+
+.c-container-3 {
+  background-image: linear-gradient(
+    to right top,
+    #ddd6f3,
+    #e6cbea,
+    #f1bfda,
+    #f9b4c3,
+    #faaca8
+  );
+  animation-timing-function: ease-out;
+}
+
+.c-container-4 {
+  background-image: linear-gradient(
+    to right top,
+    #b06ab3,
+    #d481a9,
+    #e7a0aa,
+    #efc2b9,
+    #f4e2d8
+  );
+  animation-timing-function: ease-in-out;
+}
+
+.c-container-5 {
+  background-image: linear-gradient(
+    to right top,
+    #ffafbd,
+    #c790af,
+    #8c7598,
+    #575a77,
+    #2c3e50
+  );
+  animation-timing-function: linear;
+}
+
+@keyframes block-animation {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 100%;
+  }
+}
